@@ -4,7 +4,7 @@ Crop out calibration targets in photographs of prints with calibration targets a
 
 ## Synopsis
 
-```
+```perl
 use File::Slurp qw(read_file write_file);
 
 my $data = read_file('image.jpg', { binmode => 'raw' });
@@ -15,7 +15,6 @@ my $crop = Image::Crop::CalibrationTarget->new(
 );
 
 write_file('/tmp/cropped_image.jpg', $crop->image_data);
-
 ```
 
 ## Methods
