@@ -1,6 +1,6 @@
 requires 'Image::Magick';
 requires 'Graphics::ColorObject';
-requires 'Test::More';
+requires 'File::Slurp';
 
 on 'test' => sub {
 	requires 'Test::More';
